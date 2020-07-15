@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "Bicycle X-Change",
+    "phoneNumber": "316-262-9878",
+    "imageName": "bike-xchange",
+    "address": "908 W Douglas Ave, Wichita, KS 67203"
+  },
+  {
+    "id": 2,
+    "title": "Bicycle Pedaler",
+    "phoneNumber": "316-685-4545",
+    "imageName": "bike-pedaler"
+  }
+]

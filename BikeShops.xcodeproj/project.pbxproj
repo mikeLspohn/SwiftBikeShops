@@ -13,6 +13,13 @@
 		4C8AE55924BE7D3000931C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8AE55824BE7D3000931C9F /* Assets.xcassets */; };
 		4C8AE55C24BE7D3000931C9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8AE55B24BE7D3000931C9F /* Preview Assets.xcassets */; };
 		4C8AE55F24BE7D3000931C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8AE55D24BE7D3000931C9F /* LaunchScreen.storyboard */; };
+		4C8AE56724BE83B100931C9F /* bikeShops.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C8AE56624BE83B100931C9F /* bikeShops.json */; };
+		4C8AE56924BE8CC000931C9F /* bike-xchange.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8AE56824BE8CBF00931C9F /* bike-xchange.png */; };
+		4C8AE56C24BE940F00931C9F /* BikeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AE56B24BE940F00931C9F /* BikeShop.swift */; };
+		4C8AE56F24BE94C100931C9F /* FetchBikeShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AE56E24BE94C100931C9F /* FetchBikeShops.swift */; };
+		4C8AE57124BE952600931C9F /* BikeShopsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AE57024BE952600931C9F /* BikeShopsList.swift */; };
+		4C8AE57424BEA1FC00931C9F /* BikeShopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AE57324BEA1FC00931C9F /* BikeShopPage.swift */; };
+		4C8AE57624BEA6A900931C9F /* BikeShopListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AE57524BEA6A900931C9F /* BikeShopListRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4C8AE55B24BE7D3000931C9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4C8AE55E24BE7D3000931C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8AE56024BE7D3000931C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8AE56624BE83B100931C9F /* bikeShops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bikeShops.json; sourceTree = "<group>"; };
+		4C8AE56824BE8CBF00931C9F /* bike-xchange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bike-xchange.png"; sourceTree = "<group>"; };
+		4C8AE56B24BE940F00931C9F /* BikeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeShop.swift; sourceTree = "<group>"; };
+		4C8AE56E24BE94C100931C9F /* FetchBikeShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBikeShops.swift; sourceTree = "<group>"; };
+		4C8AE57024BE952600931C9F /* BikeShopsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeShopsList.swift; sourceTree = "<group>"; };
+		4C8AE57324BEA1FC00931C9F /* BikeShopPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeShopPage.swift; sourceTree = "<group>"; };
+		4C8AE57524BEA6A900931C9F /* BikeShopListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeShopListRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +70,14 @@
 		4C8AE55124BE7D2B00931C9F /* BikeShops */ = {
 			isa = PBXGroup;
 			children = (
+				4C8AE57224BEA1D300931C9F /* Views */,
+				4C8AE56D24BE94A300931C9F /* DataLoaders */,
+				4C8AE56A24BE93EA00931C9F /* Models */,
 				4C8AE55224BE7D2B00931C9F /* AppDelegate.swift */,
 				4C8AE55424BE7D2B00931C9F /* SceneDelegate.swift */,
 				4C8AE55624BE7D2B00931C9F /* ContentView.swift */,
+				4C8AE56824BE8CBF00931C9F /* bike-xchange.png */,
+				4C8AE56624BE83B100931C9F /* bikeShops.json */,
 				4C8AE55824BE7D3000931C9F /* Assets.xcassets */,
 				4C8AE55D24BE7D3000931C9F /* LaunchScreen.storyboard */,
 				4C8AE56024BE7D3000931C9F /* Info.plist */,
@@ -73,6 +92,32 @@
 				4C8AE55B24BE7D3000931C9F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C8AE56A24BE93EA00931C9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4C8AE56B24BE940F00931C9F /* BikeShop.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4C8AE56D24BE94A300931C9F /* DataLoaders */ = {
+			isa = PBXGroup;
+			children = (
+				4C8AE56E24BE94C100931C9F /* FetchBikeShops.swift */,
+			);
+			path = DataLoaders;
+			sourceTree = "<group>";
+		};
+		4C8AE57224BEA1D300931C9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C8AE57024BE952600931C9F /* BikeShopsList.swift */,
+				4C8AE57324BEA1FC00931C9F /* BikeShopPage.swift */,
+				4C8AE57524BEA6A900931C9F /* BikeShopListRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8AE55F24BE7D3000931C9F /* LaunchScreen.storyboard in Resources */,
+				4C8AE56924BE8CC000931C9F /* bike-xchange.png in Resources */,
 				4C8AE55C24BE7D3000931C9F /* Preview Assets.xcassets in Resources */,
+				4C8AE56724BE83B100931C9F /* bikeShops.json in Resources */,
 				4C8AE55924BE7D3000931C9F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,8 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C8AE55324BE7D2B00931C9F /* AppDelegate.swift in Sources */,
+				4C8AE57624BEA6A900931C9F /* BikeShopListRow.swift in Sources */,
 				4C8AE55524BE7D2B00931C9F /* SceneDelegate.swift in Sources */,
+				4C8AE57424BEA1FC00931C9F /* BikeShopPage.swift in Sources */,
+				4C8AE56C24BE940F00931C9F /* BikeShop.swift in Sources */,
 				4C8AE55724BE7D2B00931C9F /* ContentView.swift in Sources */,
+				4C8AE57124BE952600931C9F /* BikeShopsList.swift in Sources */,
+				4C8AE56F24BE94C100931C9F /* FetchBikeShops.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
